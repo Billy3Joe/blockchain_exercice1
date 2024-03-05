@@ -35,6 +35,9 @@ def execute_find_nonce(message, leading_zeros, attempts=10):
         nonce = find_nonce(message, leading_zeros)
         if nonce is not None:
             nonce_values.append(nonce)
+            message_with_nonce = f"{message}{nonce}"
+            hashed_message = calculate_sha256(message_with_nonce)
+            print(f"Nonce value: {nonce}, Hashed message: {hashed_message}")
     return nonce_values
 
 # Message à utiliser
