@@ -12,115 +12,8 @@ message, avec un nonce évoluant de façon incrémentale à partir de 0
 ▪ Etait-ce previsible ?
 ▪ A quoi cela peut-il servir ?
 
-<<<<<<< HEAD
-## Resultat
-N=4:
-Message 1: 380536ba85b2a5bd0229b48d7e00b146
-Nonce: 15872893533313123325
-
-Message 2: d8a5a352dc9bcf9d599f8fc596287b67
-Nonce: 1024257358851485067
-
-Message 3: 92e741d611a06659f8cf1069dbd51833
-Nonce: 8722863629754601515
-
-Message 4: 5eda008133c9c610c30162745bf43aed
-Nonce: 10262678704165371784
-
-Message 5: 97765a76b21f4b1fe6bd68dfdfe98bf8
-Nonce: 11415653780725077551
-
-Message 6: 03b1b5ba3418eb1064de14aada260f65
-Nonce: 14973423623680019224
-
-Message 7: 35e235a47d08f6997b3e4b81cca55d01
-Nonce: 8147531824854604317
-
-Message 8: 6a425f6151413d263c15cf3a885b09a3
-Nonce: 10692765806190470396
-
-Message 9: 9ccee3fbabe5e4914173c81531a9e944
-Nonce: 7332519902410931589
-
-Message 10: 82a329410a5431aa2e7f0ac38ee95bb0
-Nonce: 16014331821032528271
-
-N=8:
-Message 1: 90182fedb3758d359035113229471d6e
-Nonce: 9349540882654832323
-
-Message 2: a13e765a75e1c0a78ed4dd2b17220fc2
-Nonce: 13836813214831580506
-
-Message 3: 3796b814e3ef4ab3b205c20f45375ffd
-Nonce: 15659987087163539481
-
-Message 4: 0bedf49e85429ccc005d118bc802be1c
-Nonce: 5489683989572557619
-
-Message 5: 500b1a7413900fc3d1d5c045e411738c
-Nonce: 10096822644917281287
-
-Message 6: ea8f890123190edf874b12da45d8d170
-Nonce: 4192502406475887407
-
-Message 7: 9739160e86f0f1d1268e9e236f4e1b64
-Nonce: 16182671084385287190
-
-Message 8: d62de7d5fccb1f80f6277f74b4bc3609
-Nonce: 14596465137417441184
-
-Message 9: 65f41429713ebf35192777ee20d81d6e
-Nonce: 4707579146716803790
-
-Message 10: 81f495fd201892bc134dd8b49e83cfe9
-Nonce: 11429803993932206156
-
-N=12:
-Message 1: 02ae57eb46d451f9cae2ede4451a712f
-Nonce: 12179361048537360149
-
-Message 2: df0706997e67d02f6314795012b6fa1e
-Nonce: 9427996337154948067
-
-Message 3: d71104b5189d5e6fb5a8544e90c1ed8e
-Nonce: 11339484456453569117
-
-Message 4: 89f2bfd5eea55607e0cb15c3754f8c0f
-Nonce: 7866132582663669866
-
-Message 5: ab4e9f5bf2b24a305477b9365047cd5a
-Nonce: 15677850024499555558
-
-Message 6: 333505573eeeb1c2d3098bce2160e544
-Nonce: 38230611798955396
-
-Message 7: c460730cb082778b24ff998b622b2457
-Nonce: 10119640261795919387
-
-Message 8: 1677c31eef202a685e898564d4c1164d
-Nonce: 1918226717378134268
-
-Message 9: c43af2e0a33057e4dc527677392d639d
-Nonce: 7799345017194893529
-
-Message 10: 5e909a7ffce52c03ab20bfe9d1574a24
-Nonce: 11133010358631039209
-
-N=4:
-Number of nonces: 10
-Average nonce: -622154445727909632.00
-
-N=8:
-Number of nonces: 10
-Average nonce: -513859485418989248.00
-
-N=12:
-Number of nonces: 10
-Average nonce: -473444295243971392.00
-
-PS C:\Users\billy\OneDrive\Bureau\BLOCKCHAINE\blockchaine_exo1> go run nonce_values.go   
-N=4:
+## Resultat 
+### N=4:
 Message 1: a5e8f455b92bfd6987c53d9ba1811702
 Nonce: 4977816020282032379
 
@@ -151,7 +44,7 @@ Nonce: 10874315406050367309
 Message 10: c4292b70ccce924a34537c414e6330ff
 Nonce: 12914659356917088389
 
-N=8:
+### N=8:
 Message 1: 3f1c1c9a6e6d46d7620ee4d950b2a1f3
 Nonce: 2848226229064289982
 
@@ -182,7 +75,7 @@ Nonce: 17457088163814806028
 Message 10: 7eb1b63c221f8f075234b77918972f70
 Nonce: 6243707511350494278
 
-N=12:
+### N=12:
 Message 1: 8dcaf914d396bb8111701aa16bd44d1d
 Nonce: 9444291998022727180
 
@@ -243,51 +136,3 @@ La recherche de nonces pour obtenir un haché avec un certain nombre de zéros d
 Cette méthode permet de créer une condition difficile à satisfaire mais facile à vérifier. Les mineurs doivent rechercher une solution (le nonce) qui, une fois ajoutée aux données du bloc, produit un haché avec un certain nombre de zéros de poids fort. Cela nécessite un processus itératif et intensif en calcul, mais une fois que le nonce est trouvé, il est facile pour les autres participants du réseau de vérifier que le haché satisfait la condition.
 
 Cela garantit que la création de nouveaux blocs dans la blockchain est un processus coûteux en termes de ressources de calcul, ce qui contribue à sécuriser le réseau et à prévenir les attaques malveillantes.
-=======
-## Resultats
-N=4:
-Nonce values: [2784046573, 3041036670, 2555091487, 1191571167, 3040054679, 4015047471, 4008083049, 2867578734, 1856260566, 4194916056]
-Number of nonces: 10
-Average nonce: 2955368645.2
-Standard deviation of nonce: 960232355.3533636
-
-## Statistiques
-Pour
-N=4
-Nombre de nonces : 10
-Moyenne du nonce : 2955368645.2
-Écart type du nonce : 960232355.3533636
-
-## Qu’observez-vous sur cette statistique ?
-Dans cette
-
-statistique, nous observons les valeurs des nonces générées pour N=4, ainsi que des mesures de centralité et de dispersion, à savoir la moyenne et l'écart-type.
-
--->Nonce values: Il s'agit des valeurs des nonces générées pour N=4 lors de l'exécution de l'algorithme de recherche de nonce. Chaque nonce est un entier qui satisfait la condition spécifiée, où les 4 bits de poids fort sont égaux à zéro.
-
--->Number of nonces: Il indique le nombre total de nonces générées pour N=4, dans ce cas, il y en a 10.
-
--->Average nonce: C'est la moyenne des valeurs des nonces. Dans ce cas, la moyenne est d'environ 2955368645.2. Cela signifie que, en moyenne, les nonces générés ont une valeur proche de cette moyenne.
-
--->Standard deviation of nonce: C'est une mesure de la dispersion des valeurs des nonces par rapport à la moyenne. Dans ce cas, l'écart-type est d'environ 960232355.3533636. Cela indique la variabilité des valeurs des nonces autour de la moyenne. Plus l'écart-type est élevé, plus les valeurs des nonces sont dispersées autour de la moyenne.
-
-En résumé, cette statistique nous fournit des informations sur la distribution des valeurs des nonces générées pour N=4, ainsi que sur la tendance centrale (moyenne) et la dispersion (écart-type) de ces valeurs.
-
-## Etait-ce previsible ?
-La prévisibilité dépend de la manière dont l'algorithme de recherche de nonce est conçu et de la nature aléatoire des nonces générés. Dans le cadre de cet exercice, l'algorithme utilise la fonction secrets.token_bytes() pour générer des nonces aléatoires de 32 octets (256 bits). Cependant, la fonction de hachage SHA-256 utilisée est déterministe, ce qui signifie que pour une paire donnée de message et de nonce, le haché généré sera toujours le même.
-
-Cependant, la distribution des valeurs des nonces générés peut ne pas être uniforme en raison de la nature de la génération de nombres aléatoires. Dans certains cas, certaines valeurs de nonce peuvent être plus fréquentes que d'autres, ce qui peut affecter la moyenne et l'écart-type des nonces générés.
-
-En résumé, bien que le comportement précis des nonces générés puisse ne pas être prévisible dans chaque exécution, il est raisonnable de s'attendre à ce que la moyenne et l'écart-type des nonces générés fluctuent autour de certaines valeurs, en fonction de la distribution des nombres aléatoires générés par la fonction secrets.token_bytes().
-
-## A quoi cela peut-il servir ?
-La génération de nonces avec des bits de poids fort égaux à zéro est un élément clé dans de nombreux protocoles cryptographiques et systèmes décentralisés, en particulier dans le domaine de la blockchain. Voici quelques utilisations courantes de cette technique :
-
-1. **Preuve de travail (Proof of Work) :** Dans les blockchains comme Bitcoin et Ethereum, les mineurs doivent résoudre un problème de preuve de travail pour ajouter un nouveau bloc à la chaîne. Ce problème implique de trouver un nonce de sorte que le haché du bloc satisfasse une condition spécifique, généralement que les N bits de poids fort soient nuls. Cette preuve de travail garantit que l'ajout de blocs à la chaîne nécessite un travail computationnel important, ce qui rend difficile la modification de l'historique des transactions.
-
-2. **Cryptographie :** La génération de nonces avec des bits de poids fort égaux à zéro est utilisée dans de nombreux protocoles cryptographiques pour garantir la sécurité et l'intégrité des données. Par exemple, dans le protocole de signature numérique DSA (Digital Signature Algorithm), des valeurs aléatoires appelées "k" sont utilisées dans le calcul de la signature, et il est important que ces valeurs ne soient pas prévisibles.
-
-3. **Sécurité des communications :** Dans certains protocoles de communication sécurisée, des nonces sont utilisés pour éviter la répétition des messages et pour assurer l'authenticité et l'intégrité des données échangées entre les parties.
-
-En résumé, la génération de nonces avec des bits de poids fort égaux à zéro est un mécanisme fondamental dans de nombreux domaines de la cryptographie et des systèmes décentralisés, et elle est essentielle pour assurer la sécurité et la fiabilité des systèmes.
->>>>>>> 71041a0eab293a97da4bd1af84554d7442bdbc9e
