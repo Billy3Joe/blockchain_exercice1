@@ -19,12 +19,12 @@ def find_nonce(message, leading_zeros):
     """
     Recherche un nonce produisant un haché avec les N bits de poids fort égaux à 0.
     """
-    nonce_length = 32  # Longueur du nonce en bytes
+    max_nonce_value = 2 ** 32 - 1  # Valeur maximale d'un nonce de 32 bits
     while True:
-        nonce = secrets.token_bytes(nonce_length)  # Générer un nonce aléatoire
+        nonce = secrets.randbelow(max_nonce_value + 1)  # Générer un nonce aléatoire
         hash_result = calculate_sha256_with_nonce(message, nonce)
         if hash_result.startswith('0' * leading_zeros):
-            return int.from_bytes(nonce, 'big')  # Convertir le nonce hexadécimal en entier pour N=4 et N=12
+            return nonce
 
 def execute_find_nonce(message, leading_zeros, attempts=10):
     """
